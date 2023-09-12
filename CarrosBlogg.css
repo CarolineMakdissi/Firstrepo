@@ -4,12 +4,15 @@ header {
     background-color: rgba(11, 11, 11, 0.5); /* To make the background transparent*/
     color: white;
     text-size-adjust: 15px;
-    text-align: left; /* to move the text to the  center*/
+    text-align: left; 
     text-shadow: 2px 2px 4px rgb(202, 122, 162); /*Adding shadow behind the text*/
+    scroll-padding-top: 2px;
     padding: 20px;
     padding-bottom: 6px;
     font-family:Copperplate, papyrus, fantasy; 
-    
+    border-radius: 50px;
+    margin-right: 20px;
+  
 }
 
 h1 { 
@@ -33,16 +36,59 @@ h3 {
 }
 
 #picture1 {
+    float:center;
     border: 2px solid white;
     display: block;
-    margin-bottom: 50px;
+    margin-bottom: 5px;
+    margin-right: 2px;
+    margin-left: 20px;
     width: 150px;
-    height: 150px;
+    height: 149px;
     box-shadow: 10px 10px 10px rgb(33, 32, 32, 0.5); 
 
 }
 
+#picture2 {
+float:center;
+border:2px solid white;
+margin-top:2px;
+width:150px; 
+height:150px; 
+box-shadow: 10px 10px 10px rgb(33, 32, 32, 0.5); 
 
+
+}
+
+#picture3 {
+float:center;
+border: 2px solid white;
+margin-top:25px;
+margin-left:150px;
+height:150px;
+width:150px;
+box-shadow: 10px 10px 10px rgb(33, 32, 32, 0.5); 
+
+}
+
+#picture4 {
+  float:center;
+  border: 2px solid white;
+  margin-top:25px;
+  margin-left: 150px;
+  height:150px;
+  width:150px;
+  box-shadow: 10px 10px 10px rgb(33, 32, 32, 0.5); 
+}
+
+#picture5{
+  float:center;
+  border: 2px solid white;
+  margin-top:25px;
+  margin-left:190px;
+  height:150px;
+  width:150px;
+  box-shadow: 10px 10px 10px rgb(33, 32, 32, 0.5); 
+}
 body {
 
 
@@ -85,7 +131,7 @@ body {
     position: absolute;
     width: 100%;
     height: 2px;
-    background-color: #616161;
+    background-color: black;
     transition-duration: .25s;
   }
   .menu__btn > span::before {
@@ -106,78 +152,26 @@ body {
     margin: 0;
     padding: 80px 0;
     list-style: none;
-    background-color: #ECEFF1;
-    box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+    background-color: rgba(11, 11, 11, 0.5);
+    box-shadow: 2px 2px 6px rgba(159, 155, 155, 0.4);
     transition-duration: .25s;
   }
   .menu__item {
     display: block;
     padding: 12px 24px;
-    color: #333;
-    font-family: 'Roboto', sans-serif;
+    color: black;
     font-size: 20px;
     font-weight: 600;
     text-decoration: none;
     transition-duration: .25s;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
   .menu__item:hover {
     background-color: #CFD8DC;
   }
   
 
-.box-model1 {
-color:white;
-text-shadow: 2px 2px 4px rgb(202, 122, 162); 
-float: right;
-background-color: rgba(11, 11, 11, 0.5);
-margin-top: 200px;
-margin-right: 70px;
-padding: 7px;
-border-radius: 4px;
-cursor: pointer;
-box-shadow: 10px 10px 10px rgb(33, 32, 32, 0.5);
 
-}
-
-.box-model2 {
-color: white;
-text-shadow: 2px 2px 4px rgb(202, 122, 162); 
-float: right;
-background-color: rgba(11, 11, 11, 0.5);
-margin-top: 200px;
-margin-right: 60px ;
-padding: 7px;
-border-radius: 4px;
-cursor: pointer;
-box-shadow: 10px 10px 10px rgba(33, 32, 32, 0.5);
-
-}
-
-.box-model3{
-    float: right;
-    color: white;
-    text-shadow: 2px 2px 4px rgb(202, 122, 162); 
-    background-color: rgba(11, 11, 11, 0.5);
-    margin-top: 200px;
-    margin-right: 70px ;
-    padding: 7px;
-    border-radius: 4px;
-    cursor: pointer;
-    box-shadow: 10px 10px 10px rgba(33, 32, 32, 0.5);
-}
-
-.box-model4{ 
-    float: right;
-    color: white;
-    text-shadow: 2px 2px 4px rgb(202, 122, 162); 
-    background-color: rgba(11, 11, 11, 0.5);
-    margin-top: 200px;
-    margin-right: 80px;
-    padding: 7px;
-    border-radius: 4px;
-    cursor: pointer;
-    box-shadow: 10px 10px 10px rgba(33, 32, 32, 0.5);
-}
 
 
 .aboutMe-section {  
@@ -187,18 +181,19 @@ box-shadow: 10px 10px 10px rgba(33, 32, 32, 0.5);
     padding: 20px;
     background: rgba(255,255,255,0.5);
     font-weight:bold;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     
 }
 
 .interest-section {
-
-    float:center; 
+    margin-top:30px;
+    float:center;
+    padding: 3px;
     padding: 20px;
     width: 500px;
     background: rgba(255,255, 255, 0.5);
     font-weight:bold;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif 
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
      
 }
 .reference-section { 
@@ -209,7 +204,7 @@ box-shadow: 10px 10px 10px rgba(33, 32, 32, 0.5);
     text-align: center;
     background: rgba(255,255, 255, 0.5);
     font-weight:bold;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 }
 
@@ -236,7 +231,7 @@ box-shadow: 10px 10px 10px rgba(33, 32, 32, 0.5);
   margin-right: 10px;
 }
 
-
+/*pseduo klass- hovarar över knappen*/
 .button:hover {
 opacity: 0.6;
   
@@ -252,25 +247,46 @@ background: rgba(255,255, 255, 0.5);
     
 }
 
-.followMe-section {
-background: rgba(255,255, 255, 0.5); 
-padding-left: 20px;
-padding-top: 2px;
-padding-bottom: 0.5px;
-margin-bottom: 10px;
-font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, 
-sans-serif 
-
-}
-
-
 .main-footer{
-height: 150px;
+height: 350px;
 color:white;
+border-radius:100px;
 text-shadow:2px 2px 4px rgb(202, 122, 162);
 text-align: center;
 background-color: rgba(11, 11, 11, 0.5);
-font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif 
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 
 }
 
+#fname{
+height:20px;
+cursor:pointer;
+
+}
+
+#lname{
+height:20px;
+cursor:pointer;
+}
+
+#massage{
+cursor:pointer;
+}
+
+button {
+text-shadow:2px 2px 4px rgb(202, 122, 162);
+margin-top: 20px;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+padding: 4px;
+cursor:pointer;
+box-shadow: 10px 10px 10px rgba(33, 32, 32, 0.5);
+}
+
+.fa-brands-fa-instagram{
+margin-right: 40px;
+box-sizing: 90px;
+}
+.fa-brands-fa-facebook {
+margin-right:70px;
+}
