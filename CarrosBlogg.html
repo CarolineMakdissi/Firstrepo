@@ -1,92 +1,143 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="sv">
+  <!--Warning in the code, beacuse I use English and Swedish-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>C.M</title>
-    <link rel="stylesheet" href="CarrosBlogg.css">  <!--The connection between Css file and Html file-->
-    <script src="https://kit.fontawesome.com/24bb7c7ac1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CarrosBlogg.css" />
+    <!--The connection between Css file and Html file-->
+    <script
+      src="https://kit.fontawesome.com/24bb7c7ac1.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-</head>
+  <!--Body - information to the user-->
+  <body>
+    <!--I have classes and id inside the container-->
+    <div class="container">
+      <!--HEADER-->
+      <div id="header">
+        CAROLINE MAKDISSI
+        <p>Framtida frontendutvecklare & föredetta frisör</p>
+        <!-- Hamburger menu-->
+        <nav>
+          <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+              <span></span>
+            </label>
+            <!---nav-menu list that do not response-->
+            <ul class="menu__box">
+              <li>
+                <a class="menu__item" href="carrosBlogg.html"
+                  >Startsida - Om mig</a
+                >
+              </li>
+              <li><a class="menu__item" href="contact.html">Kontakt</a></li>
+              <li>
+                <a class="menu__item" href="blogContent.html">Blogg innehåll</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
 
-<!--Body - information to the user--> 
-<body> 
-<div class="container">
-   <div id="header"> <!--upperpart of the homepage-->
-CAROLINE MAKDISSI
-<h5>Framtida frontendutvecklare & föredetta frisör</h5>
-<!-- Hamburger menu-->
-<nav>
-<div class="hamburger-menu">
-    <input id="menu__toggle" type="checkbox">
-    <label class="menu__btn" for="menu__toggle">
-      <span></span>
-    </label>
-<!---nav-menu list that do not response-->
-    <ul class="menu__box">
-      <li><a class="menu__item" href="carrosBlogg.html">Startsida - Om mig</a></li>
-      <li><a class="menu__item" href="kontakt.html">Kontakt</a></li>
-      <li><a class="menu__item" href="bloggInnehåll.html">Blogg innehåll</a></li>
-    </ul>
-  </div>
-</nav>
-</div>
- <!---Paragraph and heading in div id element - choosing to combine id and class on my webbside code to learn and to make some parts more specific with id-->
- <div id="main">
-   <div class="aboutMe-section">
-    <h1>Om mig &hearts;</h1>
-    <!--img class for my first picture in the header-->
-    <img id="picture1" src="me2-2.jpg" alt="A first picture of me">
-    <h5>Publicerad Sept 22, 2023</h5>
-    <p> Hej! Jag heter Caroline Makdissi och är 28 härliga år. 
-     Jag har jobbat som frisör i några år, men vaknade en dag och bestämde mig för att byta yrke. Studierna 
-     som frontendutvecklare har precis startar och gläjden för att äntligen hitta det nya jaget i livet är på topp. 
-     Intresset började med att få friheten att skapa och vara kreativ. Jag vill gärna dela med mig allt kreativt och som gör livet härligt i denna blogg. Läs gärna om mina intressen i nästa stycke. 
-     Om jag skulle beskriva mig själv med en mening då hade jag valt "Social men introvert". Jag är en ganska bublig person och älskar människor, men ibland håller jag gärna för mig själv när jag behöver ladda batterierna. Det gör jag ofta med musik och ensama långa promenader i naturen.  I den här bloggen får ni följa med mig i min vardag. Favorit motto: <em>Förlorar du modet i nödens stund har du också förlorat din kraft.</em> <!--em element for cursive style-->
-     </p> 
-     </div> 
+      <!--MAIN-->
+      <!---Paragraph and heading in div id element - choosing to combine id and class on my webbside code to learn and to make some parts more specific with id-->
+      <div id="main">
+        <div class="aboutMe-section">
+          <h1>Om mig &hearts;</h1>
+          <!--img class for my first picture in the header-->
+          <img
+            id="picture1"
+            src="./images/me2-2.jpg"
+            alt="A first picture of me"
+          />
+          <h5>Publicerad Sept 22, 2023</h5>
+          <p>
+            Hej! Jag heter Caroline Makdissi och är 28 härliga år. Jag har
+            jobbat som frisör i några år, men vaknade en dag och bestämde mig
+            för att byta yrke. Studierna som frontendutvecklare har precis
+            startar och gläjden för att äntligen hitta det nya jaget i livet är
+            på topp. Intresset började med att få friheten att skapa och vara
+            kreativ. Jag vill gärna dela med mig allt kreativt och som gör livet
+            härligt i denna blogg. Läs gärna om mina intressen i nästa stycke.
+            Om jag skulle beskriva mig själv med en mening då hade jag valt
+            "Social men introvert". Jag är en ganska bublig person och älskar
+            människor, men ibland håller jag gärna för mig själv när jag behöver
+            ladda batterierna. Det gör jag ofta med musik och ensama långa
+            promenader i naturen. I den här bloggen får ni följa med mig i min
+            vardag. Favorit motto:
+            <em
+              >Förlorar du modet i nödens stund har du också förlorat din
+              kraft.</em
+            >
+            <!--em element for cursive style-->
+          </p>
+        </div>
+      </div>
+
+      <div class="interest-section">
+        <h2>Mina Intressen</h2>
+        <h5>Publicerad Sept 22, 2023</h5>
+        <p>
+          Jag har alltid haft en speciell relation för allt som är konstnärligt,
+          kreativt och antikt. Ädelstenar är en sådan kategori av intresse som
+          fångar min uppmärksamhet. Jag har ingen tro i att ädelstenar kan på
+          något sätt ge oss någon påverkan av energier men det jag fastnar för
+          är hur vi människor kan ta något så vackert från naturen och slipa ner
+          det till en ny och ännu vackrare form. Att ädelstenarna är antika gör
+          det ännu mer häftigt. Tanken med att ett par antika ädelsten örhängen
+          från 1800 - talet har fått följa med vidare till flera
+          generationer.Vad har de örhängerna varit med om? Vem tillhörde dem?
+          Vad är historien bakom örhängerna? Man kan få oändligt med frågor som
+          kanske kan bli besvarade eller inte. Det är det mystiska i det hela.
+          Dessutom är det ju fint med att bära runt på ädelstenar. Eller vad
+          tycker ni?
+        </p>
+      </div>
+
+      <!-- <ul> tag and <li> tag in div class element to create a list, oordnad lista (punkter) -->
+      <div id="right">
+        <div class="gemstone-list">
+          <h3>Tipslista på ädelstenar att köpa:</h3>
+          <ul>
+            <li>Tigeröga</li>
+            <li>Citrin</li>
+            <li>Vit Opal</li>
+            <li>Rosenkvartz</li>
+            <li>Avanturin</li>
+            <li>Lapis Lazuli</li>
+          </ul>
+          <div class="reference-section">
+            Det finns även hemsida som jag länkar här nedan där ni kan checka
+            lite efter fina stenar:
+          </div>
+          <br />
+          <!-- Div with "<a>" attribute of link from one page to another -->
+          <div>
+            <a href="https://ohlamoon.se/" target="_blank" class="button"
+              >Oh la moon</a
+            >
+          </div>
+          <!--button class with link-->
+          <br />
+        </div>
+      </div>
     </div>
-    
-  <div class="interest-section"> 
-    <h2>Mina Intressen</h2>
-    <h4>Publicerad Sept 22, 2023</h4>
-    <p>Jag har alltid haft en speciell relation för allt som är konstnärligt, kreativt och antikt. Ädelstenar är en sådan kategori av intresse som fångar min uppmärksamhet. Jag har ingen tro i att ädelstenar kan på något sätt ge oss någon påverkan av energier men det jag fastnar för är hur vi människor kan ta något så vackert från naturen och slipa ner det till en ny och ännu vackrare form. Att ädelstenarna är antika gör det ännu mer häftigt. Tanken med att ett par antika ädelsten örhängen från 1800 - talet har fått följa med vidare till flera generationer.Vad har de örhängerna varit med om? Vem tillhörde dem? Vad är historien bakom örhängerna? Man kan få oändligt med frågor som kanske kan bli besvarade eller inte. Det är det mystiska i det hela. Dessutom är det ju  fint med att bära runt på ädelstenar. Eller vad tycker ni? </p>
- </div>
-    
 
-<!---Paragraph and heading in div class element -->
- 
-   
-  
-<!-- <ul> tag and <li> tag in div class element to create a list, oordnad lista (punkter) -->
-<div id="right">
- <div class="gemstone-list">
-<h3> Tipslista på ädelstenar att köpa:</h3>
-<ul>
-    <li>Tigeröga</li>
-    <li>Citrin</li>
-    <li>Vit Opal</li>
-    <li>Rosenkvartz</li>
-    <li>Avanturin</li>
-    <li>Lapis Lazuli</li>
-</ul>
-<div class="reference-section">Det finns även hemsida som jag länkar här nedan där ni kan checka lite efter fina stenar: </div><br>
-<!-- Div with "<a>" attribute of link from one page to another -->
-<div><a href="https://ohlamoon.se/" target="_blank" class="button">Oh la moon</a></div> <!--button class with link-->
-<br> 
-</div>
-</div>
- 
+    <!--Copyright  -->
+    <div id="footer">
+      <footer class="main-footer">
+        <br />
 
-</div> 
-
-<!--Copyright and contact information -->
-<div id="footer">
-<footer class="main-footer"><br>
-
-   <p>Copyright &copy; 2023, CarrosBlogg <br> Välkommen åter!</p>
-  
-  </footer>
- </div>
-</body>
+        <p>
+          Copyright &copy; 2023, CarrosBlogg <br />
+          Välkommen åter!
+        </p>
+      </footer>
+    </div>
+  </body>
 </html>
