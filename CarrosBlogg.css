@@ -419,14 +419,55 @@ a {
 
 
 /* CSS style Ipad air , Header - style changes when the screen gets smaller*/
-@media screen and (max-width:900px) {
-.main{
-
-}
+@media screen and (max-width:820px) {
 
 } 
 
-/*CSS style Iphone */
-@media screen and (max-width:500px) {
+/*CSS media queries style Iphone SE*/
+@media screen and (max-width:600px) {
 
+/*body*/
+/*Container*/
+.container{ 
+display: block;
+overflow: hidden;
+white-space: nowrap;
+text-overflow: ellipsis;
+max-width: 33,3%;
+max-height: 33,3%;
+}
+
+
+/*Class*/
+
+.interest-section h1,h2,h5 {
+max-height: 33,3%;
+max-width: 33,3%;
+}
+
+.interest-section{
+max-height: 33,3%;
+max-width: 33,3%;
+}
+
+.aboutMe-section{
+max-height: 33,3%;
+max-width: 33,3%;
+}
+/*Main*/
+.main{
+max-height: 33,3%;
+max-width: 33,3%;
+}
+/* The left and right side*/
+.right,.gemstone-list,.reference-section{
+max-height: 33,3%;
+max-width: 33,3%;
+}
+
+/*Images*/
+.picture1{
+  width: 75px;
+  height: 75px;
+}
 }
