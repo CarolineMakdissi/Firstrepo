@@ -421,13 +421,9 @@ a {
 /* CSS style Ipad air , style changes when the screen gets smaller*/ 
 /*Everything on ipad air looks good with the first page "Startsidan"*/
 
-@media screen and (max-width:820px) {
+@media screen and (max-width:820px) { /*try to the fix the responsive style better on second page "contact"*/
 
 /* Container*/
-
-.container3{
-
-}
 .container2{
 grid-template-areas: 1fr 1fr 1fr;
 max-width:100%;
@@ -435,7 +431,12 @@ max-width:100%;
 }
 /*Header*/ 
 .header2{
+height: 50px;
 margin-right: 30px;
+}
+
+.header3{
+font-size:15px;
 }
 /*Class*/
 
@@ -452,7 +453,8 @@ max-width: 100%;
 /*Footer*/
 .footer2{
 max-height:5vh;
-margin-top: 30vh; 
+margin-top: 30vh;
+margin-left: 10vh;
 }
 .footer3{
 max-height: 5vh;
@@ -483,10 +485,29 @@ max-height: 33,3%;
 grid-gap: 1rem;
 }
 
-/* Header*/
+.container2{
+  grid-template-areas: 1fr 1fr 1fr;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  max-height: 50%;
+  grid-gap: 1rem;
+}
+
+.container3 {
+  grid-template-areas: 1fr 1fr 1fr;
+  max-width: 100%;
+  max-height: 100%;
+
+}
+/* Header*/ 
 .header{
 max-width: 100%;
 max-height: 33,3%;
+font-size:12px;
+margin-right: 2px;
+}
+.header2{
+padding:1px;
 }
 /*Class*/
 
@@ -496,37 +517,55 @@ max-width: 33,3%;
 font-size: 60%;
 }
 
-.interest-section{
+.interest-section,.aboutMe-section{
 max-height: 33,3%;
 max-width: 33,3%;
 font-size: 10px;
 }
 
-.aboutMe-section{
-max-height: 33,3%;
-max-width: 33,3%;
-font-size:10px;
-}
 /*Main*/
 .main{
 max-height: 33,3%;
 max-width: 33,3%;
 font-size: 60%;
 }
+
 /* The left and right side*/
 .right,.gemstone-list,.reference-section{
 max-height: 33,3%;
 max-width: 33,3%;
 font-size: 10px;
 }
+
+.right2 {
+max-height:33,3%;
+max-width:33,3% ;
+margin-right:50px;
+}
 /* Button*/
 
 /*Images*/
-.picture1{
-  width: 75px;
-  height: 75px;
+.picture1,.picture2, .picture3, .picture4, .picture5, .picture6, .picture7{
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+  margin-right: 30px;
+  margin-left: 60px;
 }
 
+
 /*Footer*/
+
+.main-footer{
+font-size:12px;
+}
+.footer2{
+padding-top:15px;
+min-height: 2px;
+align-items: center;
+}
+.footer3{
+font-size:15px;
+}
 
 }
