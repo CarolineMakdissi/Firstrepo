@@ -1,0 +1,19 @@
+
+/* Temporary notes in this css/*
+
+/* CSS style Ipad air , Header - style changes when the screen gets smaller*/
+@media screen and (max-width:1024px) {
+
+/*Container*/
+/* main*/
+
+} 
+
+/*CSS style Iphone */
+@media screen and (max-width:600px) {
+
+/*Container*/
+
+/*Main*/
+
+}
