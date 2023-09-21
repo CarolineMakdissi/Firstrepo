@@ -1,12 +1,13 @@
 <!DOCTYPE html>
+<!--Set document language to swedish-->
 <html lang="sv">
-  <!--Warning in the code, beacuse I use English and Swedish-->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>C.M</title>
-    <link rel="stylesheet" href="CarrosBlogg.css" />
-    <!--The connection between Css file and Html file-->
+    <title>C.M - Startsida</title>
+    <!--Connect html and css file-->
+    <link rel="stylesheet" href="./CarrosBlogg.css" />
+    <!--Add font awesome to the page-->
     <script
       src="https://kit.fontawesome.com/24bb7c7ac1.js"
       crossorigin="anonymous"
@@ -14,9 +15,10 @@
   </head>
 
   <!--Body - information to the user-->
+  <!--Use html5 semantic tags, such as <header>, <footer>, <main> to improve accessibility, SEO and code readability -->
   <body>
     <div class="container">
-      <!--HEADER-->
+      <!--HEADER -->
       <header class="header">
         CAROLINE MAKDISSI
         <p>Framtida frontendutvecklare & föredetta frisör</p>
@@ -27,25 +29,24 @@
             <label class="menu__btn" for="menu__toggle">
               <span></span>
             </label>
-            <!---nav-menu list that do not response-->
             <ul class="menu__box">
               <li>
-                <a class="menu__item" href="carrosBlogg.html">Startsida</a>
+                <a class="menu__item" href="./CarrosBlogg.html">Startsida</a>
               </li>
-              <li><a class="menu__item" href="contact.html">Kontakt</a></li>
+              <li><a class="menu__item" href="./contact.html">Kontakt</a></li>
               <li>
-                <a class="menu__item" href="blogContent.html">Blogg innehåll</a>
+                <a class="menu__item" href="./blogContent.html"
+                  >Blogg innehåll</a
+                >
               </li>
             </ul>
           </div>
         </nav>
       </header>
       <!--MAIN-->
-      <!---Paragraph and heading in div id element - choosing to combine id and class on my webbside code to learn and to make some parts more specific with id-->
       <main class="main">
         <div class="aboutMe-section">
           <h1>Om mig &hearts;</h1>
-          <!--img class for my first picture in the header-->
           <img
             class="picture1"
             src="./images/me2-2.jpg"
@@ -95,7 +96,7 @@
         </p>
       </div>
 
-      <!-- <ul> tag and <li> tag in div class element to create a list, oordnad lista (punkter) -->
+      <!-- <ul> tag and <li> tag in div class element to create a list -->
       <div class="right">
         <div class="gemstone-list">
           <h3>Tipslista på ädelstenar att köpa:</h3>
@@ -118,17 +119,14 @@
               >Oh la moon</a
             >
           </div>
-          <!--button class with link-->
           <br />
         </div>
       </div>
     </div>
-
     <!--Copyright  -->
     <div class="footer">
       <footer class="main-footer">
         <br />
-
         <p>
           Copyright &copy; 2023, CarrosBlogg <br />
           Välkommen åter!

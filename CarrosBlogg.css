@@ -26,6 +26,7 @@
     "left main right"
     "footer footer footer";
   grid-gap: 1.25rem;
+  padding: 20px;
 }
 
 /* HEADER */
@@ -46,6 +47,13 @@
   padding-bottom: 5px;
   font-family: Copperplate, papyrus, fantasy;
   box-shadow: 10px 10px 10px rgb(33, 32, 32, 0.5);
+  min-height: 50px;
+}
+
+/* instead of creating a new header class for the pages where text in header is centered,
+i create new class that i can use together with main header class like this class="header header-centered" */
+.header-centered {
+  text-align: center;
 }
 
 h1 {
@@ -66,28 +74,7 @@ h5 {
   font-weight: bold;
 }
 
-.header2 {
-  grid-area: header;
-  color: white;
-  text-shadow: 2px 2px 4px rgb(202, 122, 162);
-  box-shadow: 10px 10px 10px rgba(33, 32, 32, 0.5);
-  background-color: rgba(11, 11, 11, 0.5);
-  text-align: Center;
-  font-family: Copperplate, papyrus, fantasy;
-}
-
-.header3 {
-  grid-area: header;
-  padding: 20px;
-  color: white;
-  text-shadow: 2px 2px 4px rgb(202, 122, 162);
-  box-shadow: 10px 10px 10px rgba(33, 32, 32, 0.5);
-  background-color: rgba(11, 11, 11, 0.5);
-  text-align: Center;
-  font-family: Copperplate, papyrus, fantasy;
-}
-
-/*hamburger menu*/
+/*hamburger menu, using id here for learning purposes, using style is the prefered method */
 #menu__toggle {
   opacity: 0;
 }
@@ -319,18 +306,20 @@ body {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 .reference-section {
-  padding-bottom: 2px;
   text-align: center;
   font-weight: bold;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  box-shadow: 10px 10px 10px rgb(33, 32, 32, 0.5);
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid black;
+  font-size: 12px;
+  padding: 5px;
+  margin-top: 30px;
 }
 
 .gemstone-list {
   padding: 10px;
   background: rgba(255, 255, 255, 0.5);
-  font-weight: bold;
   font-family: Copperplate, papyrus, fantasy;
 }
 
@@ -355,16 +344,22 @@ a {
   grid-area: footer;
 }
 
-.fname {
-  height: 15px;
-  cursor: pointer;
+.contact-form {
+  padding-top: 10px;
+  padding-bottom: 40px;
 }
 
-.lname {
-  height: 15px;
-  cursor: pointer;
+.form-input {
+  width: 80%;
+  height: 33px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
+.form-textarea {
+  width: 80%;
+  min-height: 88px;
+}
 .social-list {
   display: flex;
   flex-direction: column;
@@ -373,6 +368,7 @@ a {
 .icons {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  display: grid;
   text-align: center;
   border-color: black;
   border-radius: 2%;
@@ -409,16 +405,6 @@ a {
   .container2 {
     grid-template-areas: "header" "main" "right" "footer";
   }
-
-  /*Header*/
-  .header2 {
-    height: 50px;
-  }
-
-  .header3 {
-    font-size: 15px;
-  }
-  /*Class*/
 
   /*Main*/
   .main2 {
@@ -457,12 +443,6 @@ a {
     font-size: 12px;
     margin-right: 2px;
   }
-  .header2 {
-    padding: 1px;
-  }
-  /*Class*/
-
-  /* Button*/
 
   /*Images*/
   .picture1,
