@@ -5,17 +5,19 @@
     "header header header"
     "left main right"
     "footer footer footer";
-  grid-template-areas: 1fr 1fr 1fr;
-  grid-gap: 1.25rem;
+  grid-gap: 20px;
+  padding: 50px;
 }
 .container2 {
   display: grid;
   grid-template-areas:
-    "header header header"
-    "left main right"
-    "footer footer footer";
-  grid-template-areas: 1fr 1fr 1fr;
+    "header header"
+    "main right"
+    "footer footer";
   grid-gap: 1.25rem;
+  max-width: 80%;
+  margin: auto;
+  padding: 20px;
 }
 .container3 {
   display: grid;
@@ -23,7 +25,6 @@
     "header header header"
     "left main right"
     "footer footer footer";
-  grid-template-areas: 1fr 1fr 1fr;
   grid-gap: 1.25rem;
 }
 
@@ -44,7 +45,6 @@
   padding: 20px;
   padding-bottom: 5px;
   font-family: Copperplate, papyrus, fantasy;
-  margin-right: 20px;
   box-shadow: 10px 10px 10px rgb(33, 32, 32, 0.5);
 }
 
@@ -175,9 +175,6 @@ h5 {
   background-color: rgba(11, 11, 11, 0.5);
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  margin-left: 30vh;
-  margin-top: 40vh;
-  padding-bottom: 2%;
 }
 
 .main3 {
@@ -290,16 +287,17 @@ button {
   box-shadow: 10px 10px 10px rgb(33, 32, 32, 0.5);
 }
 
+html {
+  height: 100vh;
+  width: 100vw;
+}
 
 /* BODY */
 body {
-  background-repeat: no-repeat;
-  margin-top: 45px;
-  padding-bottom: 30px;
-  padding-left: 30px;
-  padding-right: 30px;
-  background-size: 1500px;
   background-image: url(./images/rosenkvartstrumlad1-2-3.jpg-1-3.jpg);
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
 }
 
 /* CLASS SECTION */
@@ -337,12 +335,15 @@ body {
 }
 
 a {
-  color: darkmagenta;
+  color: White;
   background: none;
 }
 
 /* FOOTER */
 .main-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 90px;
   color: white;
   text-shadow: 2px 2px 4px rgb(202, 122, 162);
@@ -351,37 +352,9 @@ a {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   box-shadow: 10px 10px 10px rgba(33, 32, 32, 0.5);
-}
-
-.footer {
   grid-area: footer;
 }
 
-.footer2 {
-  grid-area: footer;
-  color: white;
-  box-shadow: 10px 10px 10px rgba(33, 32, 32, 0.5);
-  background-color: rgba(11, 11, 11, 0.5);
-  text-align: center;
-  margin-top: 40vh;
-  height: 10vh;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  padding-top: 2%;
-}
-
-.footer3 {
-  grid-area: footer;
-  color: white;
-  box-shadow: 10px 10px 10px rgba(33, 32, 32, 0.5);
-  background-color: rgba(11, 11, 11, 0.5);
-  text-align: Center;
-  margin-top: 100vh;
-  height: 10vh;
-  padding-top: 2%;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
 .fname {
   height: 15px;
   cursor: pointer;
@@ -390,6 +363,11 @@ a {
 .lname {
   height: 15px;
   cursor: pointer;
+}
+
+.social-list {
+  display: flex;
+  flex-direction: column;
 }
 
 .icons {
@@ -402,170 +380,108 @@ a {
   color: white;
   text-shadow: 2px 2px 4px rgb(202, 122, 162);
   box-shadow: 10px 10px 10px rgba(33, 32, 32, 0.5);
-  margin-right: 70%;
-  margin-top: 2%;
-  padding: 2%;
-  height: 20vh;
-  width: 30vh;
   cursor: pointer;
 }
 
+.my-icon {
+  padding: 5px 0;
+}
+
 .link-shortcut {
-  margin-top: 15vh;
   color: white;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-
-/* CSS style Ipad air , style changes when the screen gets smaller*/ 
+/* CSS style Ipad air , style changes when the screen gets smaller*/
 /*Everything on ipad air looks good with the first page "Startsidan"*/
 
-@media screen and (max-width:820px) { /*try to the fix the responsive style better on second page "contact"*/
+@media screen and (max-width: 820px) {
+  /*try to the fix the responsive style better on second page "contact"*/
+  .container {
+    grid-template-areas:
+      "header header"
+      "left main"
+      "right right"
+      "footer footer";
+  }
 
-/* Container*/
-.container2{
-grid-template-areas: 1fr 1fr 1fr;
-max-width:100%;
+  .container2 {
+    grid-template-areas: "header" "main" "right" "footer";
+  }
 
-}
-/*Header*/ 
-.header2{
-height: 50px;
-margin-right: 30px;
-}
+  /*Header*/
+  .header2 {
+    height: 50px;
+  }
 
-.header3{
-font-size:15px;
-}
-/*Class*/
+  .header3 {
+    font-size: 15px;
+  }
+  /*Class*/
 
-/*Main*/
-.main2{
-padding:25px;
-align-items: center;
+  /*Main*/
+  .main2 {
+    padding: 25px;
+    align-items: center;
+  }
 }
-/*The right and left side*/
-.right2{
-max-height: 100%;
-max-width: 100%;
-}
-/*Footer*/
-.footer2{
-max-height:5vh;
-margin-top: 30vh;
-margin-left: 10vh;
-}
-.footer3{
-max-height: 5vh;
-margin-top: 15vh;
-}
-/*icons*/
-.icons{
-max-height: 20%;
-max-width: 55%;
-}
-
-/*Images*/
-
-/*links*/
-
-} 
 
 /*CSS media queries style Iphone SE*/
-@media screen and (max-width:600px) {
+@media screen and (max-width: 600px) {
+  /*Container*/
+  .container {
+    display: block;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    padding: 50px 15px;
+    grid-gap: 1rem;
+  }
 
-/*Container*/
-.container{ 
-display:block;
-grid-template-areas: 1fr 1fr 1fr;
-text-overflow: ellipsis;
-max-width: 100%;
-max-height: 33,3%;
-grid-gap: 1rem;
-}
+  .container2 {
+    text-overflow: ellipsis;
+    max-width: 100%;
+    max-height: 50%;
+    grid-gap: 1rem;
+  }
 
-.container2{
-  grid-template-areas: 1fr 1fr 1fr;
-  text-overflow: ellipsis;
-  max-width: 100%;
-  max-height: 50%;
-  grid-gap: 1rem;
-}
+  .container3 {
+    grid-template-areas: 1fr 1fr 1fr;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  /* Header*/
+  .header {
+    max-width: 100%;
+    max-height: 33, 3%;
+    font-size: 12px;
+    margin-right: 2px;
+  }
+  .header2 {
+    padding: 1px;
+  }
+  /*Class*/
 
-.container3 {
-  grid-template-areas: 1fr 1fr 1fr;
-  max-width: 100%;
-  max-height: 100%;
+  /* Button*/
 
-}
-/* Header*/ 
-.header{
-max-width: 100%;
-max-height: 33,3%;
-font-size:12px;
-margin-right: 2px;
-}
-.header2{
-padding:1px;
-}
-/*Class*/
+  /*Images*/
+  .picture1,
+  .picture2,
+  .picture3,
+  .picture4,
+  .picture5,
+  .picture6,
+  .picture7 {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    margin-right: 30px;
+    margin-left: 60px;
+  }
 
-.interest-section h1,h2,h5 {
-max-height: 33,3%;
-max-width: 33,3%;
-font-size: 60%;
-}
+  /*Footer*/
 
-.interest-section,.aboutMe-section{
-max-height: 33,3%;
-max-width: 33,3%;
-font-size: 10px;
-}
-
-/*Main*/
-.main{
-max-height: 33,3%;
-max-width: 33,3%;
-font-size: 60%;
-}
-
-/* The left and right side*/
-.right,.gemstone-list,.reference-section{
-max-height: 33,3%;
-max-width: 33,3%;
-font-size: 10px;
-}
-
-.right2 {
-max-height:33,3%;
-max-width:33,3% ;
-margin-right:50px;
-}
-/* Button*/
-
-/*Images*/
-.picture1,.picture2, .picture3, .picture4, .picture5, .picture6, .picture7{
-  width: 100px;
-  height: 100px;
-  margin-bottom: 20px;
-  margin-right: 30px;
-  margin-left: 60px;
-}
-
-
-/*Footer*/
-
-.main-footer{
-font-size:12px;
-}
-.footer2{
-padding-top:15px;
-min-height: 2px;
-align-items: center;
-}
-.footer3{
-font-size:15px;
-}
-
+  .main-footer {
+    font-size: 12px;
+  }
 }
