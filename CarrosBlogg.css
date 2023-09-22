@@ -62,15 +62,17 @@ i create new class that i can use together with main header class like this clas
     0.5
   ); /* To make the background transparent*/
   color: white;
-  scroll-padding-top: 2px;
   text-shadow: 2px 2px 4px rgb(202, 122, 162); /*Adding shadow behind the text*/
-  padding: 20px;
-  padding-bottom: 5px;
   font-family: Copperplate, papyrus, fantasy;
   box-shadow: 10px 10px 10px rgb(33, 32, 32, 0.5);
   min-height: 50px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 25px;
 }
-/* Footer */
+
 .main-footer {
   display: flex;
   align-items: center;
@@ -88,7 +90,7 @@ i create new class that i can use together with main header class like this clas
 
 /*********FIRSTPAGE-CONTAINER STYLES********/
 /*Use grid for container so we can control what order we show the sections, better flexibility than flexbox*/
-.firstpage-container { 
+.firstpage-container {
   display: grid;
   grid-template-areas:
     "header header header"
@@ -139,7 +141,6 @@ i create new class that i can use together with main header class like this clas
   font-family: Copperplate, papyrus, fantasy;
 }
 
-
 .firstPage-right-section {
   grid-area: right;
   width: 100%;
@@ -163,25 +164,25 @@ i create new class that i can use together with main header class like this clas
   opacity: 0.6;
 }
 
-/*hamburger menu, using id here for learning purposes, using style is the prefered method */
-#menu__toggle {
+/*hamburger menu, styling with id here for learning purposes and as we already using it to connect label and input elements, using class is the prefered method */
+#menu-toggle {
   opacity: 0;
 }
-#menu__toggle:checked + .menu__btn > span {
+#menu-toggle:checked + .menu-btn > .menu-btn-span {
   transform: rotate(45deg);
 }
-#menu__toggle:checked + .menu__btn > span::before {
+#menu-toggle:checked + .menu-btn > .menu-btn-span::before {
   top: 0;
   transform: rotate(0deg);
 }
-#menu__toggle:checked + .menu__btn > span::after {
+#menu-toggle:checked + .menu-btn > .menu-btn-span::after {
   top: 0;
   transform: rotate(90deg);
 }
-#menu__toggle:checked ~ .menu__box {
+#menu-toggle:checked ~ .menu-box {
   left: 0 !important;
 }
-.menu__btn {
+.menu-btn {
   position: fixed;
   top: 20px;
   left: 20px;
@@ -190,9 +191,9 @@ i create new class that i can use together with main header class like this clas
   cursor: pointer;
   z-index: 1;
 }
-.menu__btn > span,
-.menu__btn > span::before,
-.menu__btn > span::after {
+.menu-btn > .menu-btn-span,
+.menu-btn > .menu-btn-span::before,
+.menu-btn > .menu-btn-span::after {
   display: block;
   position: absolute;
   width: 100%;
@@ -200,15 +201,15 @@ i create new class that i can use together with main header class like this clas
   background-color: black;
   transition-duration: 0.25s;
 }
-.menu__btn > span::before {
+.menu-btn > .menu-btn-span::before {
   content: "";
   top: -8px;
 }
-.menu__btn > span::after {
+.menu-btn > .menu-btn-span::after {
   content: "";
   top: 8px;
 }
-.menu__box {
+.menu-box {
   display: block;
   position: fixed;
   top: 0;
@@ -222,7 +223,7 @@ i create new class that i can use together with main header class like this clas
   box-shadow: 2px 2px 6px rgba(159, 155, 155, 0.4);
   transition-duration: 0.25s;
 }
-.menu__item {
+.menu-item {
   display: block;
   padding: 12px 24px;
   color: white;
@@ -233,10 +234,10 @@ i create new class that i can use together with main header class like this clas
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
-.menu__item:hover {
-  background-color:pink;
+.menu-item:hover {
+  background-color: pink;
   text-shadow: none;
-  color:black;
+  color: black;
 }
 
 .burger-icon-container {
@@ -375,7 +376,7 @@ i create new class that i can use together with main header class like this clas
   }
 
   .menu__item:hover {
-  background-color:initial;
+    background-color: initial;
   }
 }
 
@@ -400,8 +401,7 @@ i create new class that i can use together with main header class like this clas
 
   .header {
     max-width: 100%;
-    font-size: 12px;
-    margin-right: 2px;
+    font-size: 20px;
   }
 
   .picture-section {
