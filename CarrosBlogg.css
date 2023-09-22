@@ -216,7 +216,7 @@ i create new class that i can use together with main header class like this clas
   margin: 0;
   padding: 80px 0;
   list-style: none;
-  background-color: rgba(11, 11, 11, 0.5);
+  background-color: rgba(11, 11, 11, 0.8);
   box-shadow: 2px 2px 6px rgba(159, 155, 155, 0.4);
   transition-duration: 0.25s;
 }
@@ -371,7 +371,7 @@ i create new class that i can use together with main header class like this clas
   }
 
   .menu__item:hover {
-    opacity: initial;
+  background-color:initial;
   }
 }
 
