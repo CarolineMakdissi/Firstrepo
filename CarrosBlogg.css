@@ -235,6 +235,17 @@ i create new class that i can use together with main header class like this clas
   background-color: #cfd8dc;
 }
 
+.burger-icon-container {
+  background: pink;
+  position: fixed;
+  width: 51px;
+  height: 36px;
+  top: 2px;
+  left: 7px;
+  border-radius: 298px;
+  border: 1px solid black;
+}
+
 /*********CONTACT-CONTAINER STYLES*********/
 .contact-container {
   display: grid;
@@ -366,15 +377,16 @@ i create new class that i can use together with main header class like this clas
 
 /*CSS media queries style mobile*/
 @media screen and (max-width: 600px) {
-  /*Container*/
   .firstpage-container {
-    display: block;
-    text-overflow: ellipsis;
-    max-width: 100%;
+    grid-template-areas:
+      "header"
+      "main"
+      "left"
+      "right"
+      "footer";
     padding: 50px 15px;
-    grid-gap: 1rem;
+    grid-gap: 15px;
   }
-
   .contact-container {
     text-overflow: ellipsis;
     max-width: 100%;
